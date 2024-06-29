@@ -1,0 +1,76 @@
+:root {
+  color-scheme: light dark;
+  background-color: #242424;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1.2em;
+  font-weight: 500;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: purple;
+}
+.stopwatch{
+  width: 400px;
+}
+.stopwatch-controls{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+@media screen and (max-width: 460px) {
+  .stopwatch-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .control-button{
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100px;
+
+  }
+  .stopwatch{
+    width: fit-content;
+    margin: auto;
+  }
+  .TimeElapsed-ladder{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.TimeElapsed{
+  border: 1px solid white;
+  margin: 20px;
+  padding: 20px;
+}
+.TimeElapsed-ladder{
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  align-items: center;
+  margin: auto;
+}
+.TimeElapsed-time{
+  width: "60px"; text-align: "left"
+}
